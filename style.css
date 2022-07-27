@@ -59,6 +59,12 @@ h4{
     color: #a0aec0;
 }
 
+h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #243e63;
+}
+
 .btn{
     background-color: #6415ff;
     border: none;
@@ -364,4 +370,61 @@ nav{
     color: white;
     padding: 12px 32px;
     margin-top: 32px;
+}
+
+/* START */
+
+.steps__heading{
+    font-weight: 700;
+}
+
+.start__img--wrapper{
+    width: 50%;
+    height: 80%;
+}
+
+.start__img{
+    width: 100%;
+    padding: 26px 0;
+}
+
+.start__info{
+    width: 50%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.point__number{
+    font-size: 36px;
+    font-weight: 600;
+    color: #cbd5e0;
+}
+
+.info__points{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.info__point{
+   display: flex;
+   align-items: flex-start;
+   width: 65%;
+}
+
+.point__detail{
+   margin-left: 24px;
+}
+
+.point__one{
+    margin-left: 30px;
+}
+
+.start__para{
+    font-size: 14px;
+    color: #718096;
+    padding: 12px 0;
+    line-height: 2;
 }
