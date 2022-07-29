@@ -249,8 +249,20 @@ nav{
     justify-content: space-between;
 }
 
+.form__wrapper:focus-within{
+    border: 2px solid #6415ff;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 448px;
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 .input__email{
     color: black;
+    border: none;
+    outline: none;
 }
 
 .form__btn{
@@ -811,6 +823,16 @@ i{
     margin: 0 12px;
     border-radius: 50px;
     transition: all 300ms ease;
+    border: white 3px solid;
+}
+
+.arrow__wrapper:active{
+    display: flex;
+    background-color: rgb(237, 242, 247);
+    padding: 16px;
+    margin: 0 12px;
+    border-radius: 50px;
+    border: lightskyblue 3px solid;
 }
 
 .left__arrow, .right__arrow{
@@ -828,4 +850,123 @@ i{
 .person__location{
     color: #7c8ba1;
     font-weight: 600;
+}
+
+/* FAQS */
+
+.row__faqs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.faqs__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqs__header{
+    margin-bottom: 16px;
+}
+
+.faqs__para{
+    font-size: 18px;
+    font-weight: 600;
+    color: #7c8ba1;
+    margin-top: 16px;
+    width: 45%;
+    text-align: center;
+    line-height: 2.125;
+}
+
+.collapsible{
+    width: 70%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.collapsible input{
+    display: none;
+}
+
+
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    padding: 16px 40px;
+    background-color: rgb(237, 242, 247);
+    color: rgb(45, 55, 72);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 16px 40px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.collapsible label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    /* background: url(arrow.svg) no-repeat 0 0; */
+    transition: all 300ms ease;
+}
+
+.collapsible__text{
+    max-height: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #243e63;
+    line-height: 1.625;
+    position: relative;
+    text-align: left;
+    /* top: -100%; */
+    /* opacity: .5; */
+    transition: all 300ms ease-in-out;
+    top: 0;
+    background-color: rgb(237, 242, 247);
+}
+
+.collapsible input:checked ~ .collapsible__text{
+    max-height: 300px;
+    padding: 16px 40px;
+    background-color: rgb(237, 242, 247);
+    border-radius:0 0 10px 10px ;
+}
+
+.collapsible input:checked ~ label{
+    border-radius: 10px 10px 0 0;
+}
+
+.collapsible input ~ label svg{
+    transition: all 300ms ease-in-out;
+}
+
+.collapsible input:checked ~ label svg{
+    transform: rotate(180deg);
+}
+
+label svg{
+    color: rgb(45, 55, 72);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+label{
+    transition: all 300ms ease-in-out;
+}
+
+.c__text{
+    background-color: #edf2f7;
+    border-radius: 10px;
 }
