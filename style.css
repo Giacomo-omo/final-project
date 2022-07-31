@@ -185,13 +185,13 @@ nav{
     margin: 8px 8px 8px 0;
     padding: 16px 0;
     border-radius: 50px;
-    width: 160px;
     cursor: pointer;
 }
 
 
 .about__img--wrapper{
     width: 60%;
+    display: flex;
 }
 
 
@@ -271,9 +271,12 @@ nav{
     font-family:'Inter', sans-serif;
     font-weight: 700;
     border: none;
-    padding: 14px 36px;
+    padding: 16px 32px;
     margin-right: 8px;
-    max-width: 100%;   
+    max-width: 100%; 
+    width: 160px;
+    height: 100%;
+    position: relative;
 }
 
 /* FEATURES */
@@ -872,12 +875,12 @@ i{
 
 .faqs__para{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: #7c8ba1;
     margin-top: 16px;
     width: 45%;
     text-align: center;
-    line-height: 2.125;
+    line-height: 1.5;
 }
 
 .collapsible{
@@ -890,6 +893,12 @@ i{
     display: none;
 }
 
+.collapsible__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
 
 .collapsible label{
     position: relative;
@@ -969,4 +978,321 @@ label{
 .c__text{
     background-color: #edf2f7;
     border-radius: 10px;
+}
+
+
+/* GET STARTED */
+
+.decorator__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+    width: 100%;
+    height: 282px;
+    background-color: #6415ff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* .decorator__row:before, .decorator__row:after{
+    background: url();
+} */
+
+.text-btn__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns__wrapper{
+    margin-right: 128px;
+    display: flex;
+}
+
+.decorator__text{
+    font-size: 30px;
+    color: #f7fafc;
+    font-weight: 700;
+    width: 480px;
+    margin: 0 0 0 156px;
+}
+
+.red__started{
+    padding: 20px 40px;
+    margin: 0 32px;
+    background-color: #f56565;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: #f7fafc;
+    font-weight: 700;
+    transition: all 300ms ease;
+}
+
+.red__started:hover{
+    padding: 20px 40px;
+    margin: 0 32px;
+    background-color: #e53e3e;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: #f7fafc;
+    font-weight: 700;
+}
+
+.contact__btn{
+    padding: 20px 40px;
+    margin: 0 32px 0 0;
+    background-color: #6415ff;
+    border: solid 1px white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #f7fafc;
+    font-weight: 700;
+    transition: all 300ms ease;
+}
+
+.contact__btn:hover{
+    padding: 20px 40px;
+    margin: 0 32px 0 0;
+    background-color: #f7fafc;
+    border: solid 1px white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #6415ff;
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+footer{
+    height: 50vh;
+    background-color: #6415ff;
+
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    max-width: 1280px;
+}
+
+.footer-lists{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__list-title{
+    font-size: 16px;
+    color: #f7fafc;
+    font-weight: 700;
+    
+}
+
+.footer__link{
+    margin-top: 12px;
+    padding: 0px 0px 4px 0;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    border-bottom: white;
+}
+
+.footer__link:hover{
+    color: white;
+}
+
+.footer__link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -2px;
+    transform: scale(1, 0);
+    transition: all 300ms ease;
+}
+
+.footer__link:hover::after{
+    transform: scale(1, 1);
+}
+
+.footer__line{
+    width: 100%;
+    border: solid 1px #e5e7eb;
+    opacity: 20%;
+    margin: 64px 0;
+}
+
+.footer__logos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__logo-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo--title{
+    font-size: 20px;
+    color: #f7fafc;
+    margin-left: 8px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.footer__logo{
+    width: 32px;
+    height: 32px;
+}
+
+.footer__copyright{
+    display: flex;
+    align-items: center;
+    color: #f7fafc;
+}
+
+.footer__socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__social{
+    background-color: #f7fafc;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    transition: all 300ms ease;
+}
+
+.footer__social:hover{
+    background-color: #cbd5e0;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.social__svg{
+    color: black;
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+}
+
+.yt{
+    margin-right: 0px;
+}
+
+.yt:hover{
+    margin-right: 0px;
+}
+
+@media (max-width:1280px){
+    .about__img--wrapper{
+        width: 45%;
+    }
+    
+    .row__header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    .header__para{
+        font-size: 16px;
+    }
+
+    .header{
+        width: 45%;
+    }
+
+    .values__title{
+        width: 90%;
+    }
+
+    .values__para{
+        width: 87%;
+    }
+
+    .testimonials__img--wrapper{
+        width: 40%;
+        display: flex;
+    }
+
+    .testimonials__review--title{
+        font-weight: 700;
+    }
+    
+    .testimonials__description{
+        width: 60%;
+    }
+
+    .collapsible{
+        width: 75%;
+    }
+
+    .decorator__text{
+        margin-left: 118.5px;
+    }
+
+    .btns__wrapper{
+        margin-right: 118.5px;
+    }
+
+    .footer__container{
+        width: 95%;
+    }
+
+    .buy__now--btn{
+        width: 100%;
+        padding: 16px 30px;
+    }
+
+    .decorator__text{
+        width: 60%;
+    }
+
+    .btns__wrapper{
+        width: 100%;
+    }
+
+    .decorator__row{
+        display: flex;
+        justify-content: space-between;
+    }
 }
