@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="container__lot">
@@ -46,6 +47,34 @@
             <a href="#signup" class="navbar__link--sign-up btn">Sign Up</a>
           </li>
         </ul>
+        <button class="button__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="button__menu button__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link " onclick="closeMenu()">About</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()">Blog</a>
+            </li>
+            <li class="menu__list">
+              <a href="pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+            </li>
+            <li class="menu__list">
+              <a href="pricing" class="menu__link" onclick="closeMenu()">Contact Us</a>
+            </li>
+            <li class="menu__list">
+              <a href="pricing" class="menu__link" onclick="closeMenu()">Login</a>
+            </li>
+            <li class="menu__list">
+              <a href="pricing" class="menu__link" onclick="closeMenu()">Sign Up</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <header>
         <div class="container">
@@ -67,7 +96,7 @@
                     placeholder="Your E-mail Address"
                     class="input__email"
                   />
-                  <button class="btn form__btn">Get Started</button>
+                  <div class="btn__container"><button class="btn form__btn">Get Started</button></div>
                 </div>
               </form>
               <div class="trusted__customers">
@@ -480,11 +509,11 @@
                   enim ad minim veniam.
                 </p>
                 <div class="testimonials__review--wrapper">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star stars"></i>
+                  <i class="fas fa-star stars"></i>
+                  <i class="fas fa-star stars"></i>
+                  <i class="fas fa-star stars"></i>
+                  <i class="fas fa-star stars"></i>
                   <h3 class="testimonials__review--title">
                     Love the Deveoper Experience and Design Principles !
                   </h3>
